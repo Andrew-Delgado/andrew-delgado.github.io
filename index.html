@@ -2,6 +2,8 @@
 <html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="script.js"></script>
+<link rel="stylesheet" type="text/css" href="styles.css">
 <header>
     Andrew Delgado
 </header>
@@ -38,94 +40,5 @@
     <div class="right">
     </div>
 </div>
-
-
-<style>
-    .grid {
-        display: grid;
-        place-items: center;
-        width: auto;
-    }
-
-    body {
-        background-color: #B38C00;
-        /* transition: background-color 0.5s ease-in-out; */
-    }
-
-    header {
-        color: #343540;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 70px;
-        text-align: center;
-        padding-bottom: 5%;
-    }
-
-    @media only screen and (max-width: 500px) {
-        header {
-        color: #343540;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 40px;
-        text-align: center;
-        padding-bottom: 5%;
-    }
-    }
-
-    p,
-    dl {
-        color: #343540;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 20px;
-        padding-bottom: 5%;
-    }
-
-    * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
-
-    .container {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 2%;
-    }
-
-    .left {
-        flex: 1 200px;
-        text-align: center;
-        padding-bottom: 20px;
-    }
-
-    .center {
-        flex: 3 200px;
-    }
-
-    .right {
-        flex: 1 200px;
-    }
-</style>
-
-<script>
-    function changeBackgroundColor() {
-        let currentTime = new Date();
-        let hours = currentTime.getHours();
-
-        if (hours > 6 && hours < 14) {
-            currentShade = "#B38C00"     // day
-            currentFontColor = "#343540" // day
-        } else {
-            currentShade = "#343540"     // night
-            currentFontColor = "#B38C00" // night
-        }
-        document.body.style.backgroundColor = currentShade;
-        var all = document.getElementsByTagName("*");
-
-        for (var i = 0, max = all.length; i < max; i++) {
-            all[i].style.color = currentFontColor;
-        }
-    }
-
-    window.onload = changeBackgroundColor
-</script>
 
 </html>
