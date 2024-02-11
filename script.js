@@ -2,13 +2,14 @@ function changeBackgroundColor() {
   let currentTime = new Date();
   let hours = currentTime.getHours();
 
-  if (hours > 6 && hours < 14) {
-    currentShade = "#B38C00"; // day
-    currentFontColor = "#343540"; // day
-  } else {
+  let currentShade = "#B38C00"; // day
+  let currentFontColor = "#000000"; // day
+  
+  if (hours < 6 && hours > 14) {
     currentShade = "#343540"; // night
     currentFontColor = "#B38C00"; // night
   }
+
   document.body.style.backgroundColor = currentShade;
   var all = document.getElementsByTagName("*");
 
