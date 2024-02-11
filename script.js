@@ -5,7 +5,7 @@ function changeBackgroundColor() {
   let currentShade = "#B38C00"; // day
   let currentFontColor = "#000000"; // day
   
-  if (hours < 6 && hours > 14) {
+  if (hours < 6 || hours > 14) {
     currentShade = "#343540"; // night
     currentFontColor = "#B38C00"; // night
   }
