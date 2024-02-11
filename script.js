@@ -11,9 +11,14 @@ function changeBackgroundColor() {
   }
 
   document.body.style.backgroundColor = currentShade;
-  var all = document.getElementsByTagName("*");
+  const elementsToUpdate = ["a", "p", "header"]
+  let all = []
 
-  for (var i = 0, max = all.length; i < max; i++) {
+  elementsToUpdate.forEach((e) => {
+    all = [...all, ...document.getElementsByTagName(e)]
+  });
+
+  for (let i = 0, max = all.length; i < max; i++) {
     all[i].style.color = currentFontColor;
   }
 }
