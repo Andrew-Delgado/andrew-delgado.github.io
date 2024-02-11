@@ -41,6 +41,11 @@ ul {
     padding-bottom: 5%;
     font-weight: lighter;
     list-style-type: none;
+    text-justify: auto;
+}
+
+li {
+    padding-bottom: 2.5%;
 }
 
 a {
