@@ -1,3 +1,8 @@
+:root {
+    --background-color: #b38c00;
+    --font-color: #000000;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -5,12 +10,12 @@
 }
 
 body {
-    background-color: #b38c00;
+    background-color: var(--background-color);
     /* transition: background-color 0.5s ease-in-out; */
 }
 
 header {
-    color: #343540;
+    color: var(--font-color);
     font-family: "Times New Roman";
     font-size: 70px;
     text-align: center;
@@ -18,9 +23,9 @@ header {
     padding-top: 2.5%;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 430px) {
     header {
-        color: #343540;
+        color: var(--font-color);
         font-family: "Times New Roman";
         font-size: 40px;
         text-align: center;
@@ -35,7 +40,7 @@ header {
 
 p,
 ul {
-    color: #343540;
+    color: var(--font-color);
     font-family: "Helvetica";
     font-size: 20px;
     padding-bottom: 5%;
@@ -50,6 +55,7 @@ li {
 
 a {
     text-decoration: none;
+    color: var(--font-color);
 }
 
 
