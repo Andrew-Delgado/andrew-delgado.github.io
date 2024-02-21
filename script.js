@@ -6,7 +6,7 @@ function changeBackgroundColor() {
   const dayTextColor = "#000000"
 
   const nightBackgroundColor = "#343540"
-  const nightTextColor = "#B38C00"
+  const nightTextColor = "#d8a900"
 
   if (hours < 6 || hours > 14) {
     document.documentElement.style.setProperty("--background-color", nightBackgroundColor)
@@ -40,8 +40,10 @@ function forceColorChange() {
 }
 
 function fontAndColorUpdates() {
-  changeBackgroundColor()
+  // changeBackgroundColor()
   italicCurrentPage()
 }
 
 document.addEventListener('DOMContentLoaded', fontAndColorUpdates);
+
+// window.onload = fontAndColorUpdates
